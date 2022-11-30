@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*Dica: Quando eu quero retirar a margin e o padding de todos os elementos, eu utilizo 
+    o ASTERISCO -> *{margin: 0 e padding: 0}, com isso, vai sair todos os espaços*/
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+    /*Dica: Esse container (acima) eu utilizo quando eu quero centralizar os itens, textos, 
+    entre outras coisas da minha página*/
+}
+
+header{
+    background-color: #48c5ce;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.title{
+    font-size: 26px;
+}
+
+section{
+    padding: 20px;
+    background-image: url('./people.jpg');
+    background-size: cover; /*Eu quero que o tamanho da minha imagem seja real ao seu tamanho*/
+    overflow: hidden; /*Isso vai fazer que minha imagem preencha tudo o que ela precisa preencher*/
+}
+
+.formContainer{
+    max-width: 230px; /*Para limitar o espaço no elemento da Section*/
+    background-color: #FFFFFFBB;
+    padding: 20px;
+    float: right; /*Para ficar na direita*/
+}
+
+h2{
+    font-size: 16px;
+}
+
+.mb{
+    margin-bottom: 15px; /*Serve para criar um espaço entre "Garabta o seu lugar..." e "Neste evento, você vai..."*/
+}
+
+input, select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+    /*Essa parte é para arrumar e/ou organizar os itens como: Nome, Email, Cidade e Inscreva-se*/
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: #48c5ce;
+    font-weight: bold;
+  /*Esse tipo de INPUT, é utilizado para deixar um estilo específico para o Botão Inscreva-se*/  
+}
+
+select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(./arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    /*Esse SELECT, é para deixar padrão em todos os navegadores o icone que seleciona a Cidade*/ 
+}
+
+.picture{
+    width: 260px;
+    /*É para melhorar a minha imagem e/ou foto*/ 
+}
+
+footer{
+    background-color: #202121;
+    padding: 40px;
+    text-align: center; /*Eu consegui usar isso, pois abaixo estamos utilizando o display inline-block*/
+
+}
+
+.description{
+    display: inline-block;
+    text-align: left;
+    color: white;
+    max-width: 40%;
+    margin-left: 40px;
+    /*É para dar cor texto e que o mesmo fique ao lado da imagem e/ou foto*/
+}
+
+.description p, .description h3{
+    margin-bottom: 20px;
+    /*É para colocar uma pequena margen nos itens (ao lado da imagem e/ou foto):
+    O Palestrante, no 1º parágrafo Carlos Fontana e o no 2º parágrafo Formado.
+    E tudo está dentro da DIV description*/
+}
+
+.description h3{
+    font-size: 24px;
+}
